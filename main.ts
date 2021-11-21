@@ -1,13 +1,5 @@
-import { Construct } from "constructs";
-import { App, TerraformStack } from "cdktf";
-
-class MyStack extends TerraformStack {
-  constructor(scope: Construct, name: string) {
-    super(scope, name);
-
-    // define resources here
-  }
-}
+import { App } from "cdktf";
+import { MyStack } from "./my-stack";
 
 const app = new App();
 new MyStack(app, "study-tfcdk");
